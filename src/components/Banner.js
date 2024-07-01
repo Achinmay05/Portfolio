@@ -3,7 +3,6 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import { Container, Col, Row } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { useState, useEffect } from "react";
 import { useTypewriter, Cursor} from 'react-simple-typewriter';
 
 export const Banner = () => {
