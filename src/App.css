@@ -810,4 +810,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: white; /* Change bullet color to white */
 }
 
+.card {
+  border-radius: 30px;
+}
+
+
 /* swiper.css */
