@@ -1,37 +1,49 @@
-import { Col, Container, Tab, Row, Nav } from "react-bootstrap";
+import { Col, Container, Tab, Row } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import news from "../assets/img/news-project.jpg";
-import textProject from "../assets/img/text-project.jpg";
-import calculator from "../assets/img/calculator-project.jpg";
-import calender from "../assets/img/calender-project.jpg";
+import textProject from "../assets/img/TextUtils.webp";
+import expenseTracker from "../assets/img/expenseTracker.webp";
+import ReactCart from "../assets/img/ReactCart.webp";
+import iNotebook from "../assets/img/inotebook.webp";
+import HuntingCoder from "../assets/img/huntingcoder.webp";
 import TrackVisibility from "react-on-screen";
 import { Card } from "./Card"
 
 export const Projects = () => {
     const projectsFirst = [
         {
-            title: "News Website ",
-            description: "created a website using React in which user can read the top news headlines.",
+            title: "News Website",
+            description: "A React-based application that provides users with the latest news headlines and articles from various sources.",
             imgUrl: news,
         },
         {
-            title: "Text Formatter",
-            description: "a website in which user can perform various text related actions",
+            title: "Text Utility Website",
+            description: "A React-based application that allows users to perform various text manipulations and formatting tasks.",
             imgUrl: textProject,
         },
         {
-            title: "Simple Caculator",
-            description: "a simple calculator using react",
-            imgUrl: calculator,
+            title: "Expense Tracker",
+            description: "A React application that helps users track and manage their expenses efficiently.",
+            imgUrl: expenseTracker,
         },
         {
-            title: "Calender",
-            description: "a basic calender in which user can mark important dates.",
-            imgUrl: calender,
+            title: "Shopping Cart",
+            description: "A React application that provides a seamless shopping experience with features to add, remove, and manage items in the cart.",
+            imgUrl: ReactCart,
+        },
+        {
+            title: "iNotebook",
+            description: "A React application that allows users to create, edit, and organize their notes efficiently.",
+            imgUrl: iNotebook,
+        },
+        {
+            title: "Hunting Coder",
+            description: "A React application that allows users to create, edit, and organize their notes efficiently.",
+            imgUrl: HuntingCoder,
         },
 
     ];
@@ -83,6 +95,29 @@ export const Projects = () => {
         },
 
     ];
+    const projectsFourth = [
+        {
+            title: "third News Website ",
+            description: "a website in which user can read the top news headlines.",
+            imgUrl: projImg1,
+        },
+        {
+            title: " third Text Formatter",
+            // description: "",
+            imgUrl: projImg2,
+        },
+        {
+            title: "third",
+            // description: "Design & Development",
+            imgUrl: projImg3,
+        },
+        {
+            title: "third",
+            // description: "Design & Development",
+            imgUrl: projImg2
+        },
+
+    ];
 
     return (
 
@@ -99,7 +134,7 @@ export const Projects = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn animate__fast" : "animate__animated animate__fadeOut animate__fast"}>
                                     <h2>Projects</h2>
-                                    <p>These are some of the Frontend Projects developed by me.</p>
+                                    <p>These are some of the Projects developed by me.</p>
                                 </div>}
                         </TrackVisibility>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -165,6 +200,21 @@ export const Projects = () => {
                                     </Row>
                                 </Tab.Pane>
 
+                                <Tab.Pane eventKey="fourth">
+                                    <Row>
+                                        {
+                                            projectsFourth.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
+
 
                                 {/* modification */}
 
@@ -214,6 +264,8 @@ export const Projects = () => {
                                     </Row>
                                 </Tab.Pane>
 
+
+
                                 {/* modification */}
 
                             </Tab.Content>
@@ -221,7 +273,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            <img src={colorSharp2} className="background-image-right" ></img>
+            <img src={colorSharp2} alt="none" className="background-image-right" ></img>
         </section>
     );
 };
