@@ -23,7 +23,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 export const Achievements = () => {
 
   return (
-    <section className='achievements'>
+    <section className='achievements' id='achievements'>
 
 
       <h2>Achievements</h2>
