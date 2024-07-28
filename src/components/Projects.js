@@ -1,4 +1,4 @@
-import { Col, Container, Tab, Row } from "react-bootstrap";
+import { Col, Container, Tab, Row, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
@@ -138,8 +138,8 @@ export const Projects = () => {
                                 </div>}
                         </TrackVisibility>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
-
-                            {/* <Nav variant="pills" className="mb-5 justify-content-center align-items-center">
+{/* 
+                            <Nav variant="pills" className="mb-5 justify-content-center align-items-center">
                                 <Nav.Item>
                                     <Nav.Link eventKey="first">Tab 01</Nav.Link>
                                 </Nav.Item>
