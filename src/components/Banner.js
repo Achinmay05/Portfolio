@@ -16,7 +16,7 @@ const [text] = useTypewriter({
 
 
     const handleClick = () => {
-        window.open('https://drive.google.com/file/d/1kG8xJhNiw3_mhAzaTOxxpE2I2bmttKEc/view?usp=drivesdk', '_blank', 'noopener,noreferrer');
+        window.open('https://drive.google.com/file/d/1yjU2lE9d2684Feta11DIlLH6L_JdvlSn/view?usp=drivesdk', '_blank', 'noopener,noreferrer');
     };
 
     return (

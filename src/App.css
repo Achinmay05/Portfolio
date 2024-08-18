@@ -734,16 +734,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-radius: 25px;
     width: 519px;
     height: 380px;
+
+  }
+
+  .hidden{
+    display: none;
   }
 }
 
 @media screen and (max-width: 700px){
-  .proj-imgbx img {
+.proj-imgbx img {
     display: none;
   }
 
   .cards{
     display: block;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .card-text{
+   padding: 0%;
   }
 }
 
@@ -791,6 +804,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .mySwiper .swiper-button-prev {
   left: 10px; /* Adjust as needed */
 }
+
+
+
+
 
 @media screen and (max-width : 550px ) {
 

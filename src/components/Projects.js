@@ -42,7 +42,7 @@ export const Projects = () => {
         },
         {
             title: "Hunting Coder",
-            description: "A React application that allows users to create, edit, and organize their notes efficiently.",
+            description: "Hunting Coder is a Next.js-powered blog site for sharing coding tutorials and tips. It features fast performance, easy navigation, and a clean design, providing developers with valuable coding insights.",
             imgUrl: HuntingCoder,
         },
 
@@ -154,7 +154,7 @@ export const Projects = () => {
 
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
-                                    <Row>
+                                    <Row className="hidden">
                                         {
                                             projectsFirst.map((project, index) => {
                                                 return (
@@ -171,7 +171,7 @@ export const Projects = () => {
 
 
                                 <Tab.Pane eventKey="second">
-                                    <Row>
+                                    <Row className="hidden">
                                         {
                                             projectsSecond.map((project, index) => {
                                                 return (
@@ -186,7 +186,7 @@ export const Projects = () => {
                                 </Tab.Pane>
 
                                 <Tab.Pane eventKey="third">
-                                    <Row>
+                                    <Row className="hidden">
                                         {
                                             projectsThird.map((project, index) => {
                                                 return (
@@ -201,7 +201,7 @@ export const Projects = () => {
                                 </Tab.Pane>
 
                                 <Tab.Pane eventKey="fourth">
-                                    <Row>
+                                    <Row className="hidden">
                                         {
                                             projectsFourth.map((project, index) => {
                                                 return (
@@ -214,6 +214,7 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
+
 
 
                                 {/* modification */}
