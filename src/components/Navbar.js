@@ -54,6 +54,9 @@ export const Navbar = () => {
                             <li className="nav-item">
                                 <HashLink className={`nav-link ${activeLink === 'achievements' ? 'active navbar-link' : 'navbar-link'}`} to="#achievements" onClick={() => onUpdateActiveLink('achievements')}>Achievements</HashLink>
                             </li>
+                            <li className="nav-item">
+                                <HashLink className={`nav-link ${activeLink === 'LeetCode' ? 'active navbar-link' : 'navbar-link'}`} to="#LeetCode" onClick={() => onUpdateActiveLink('LeetCode')}>Competitive Profile</HashLink>
+                            </li>
                         </ul>
                         <span className="navbar-text">
                             <div className="social-icon">

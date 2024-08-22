@@ -11,13 +11,13 @@ export const Footer = () => {
             <Container>
                 <Row className="align-item-center">
 
-                    <Col size={12} sm={6} className="text-center text-sm-end ">
+                    <Col size={12} sm={6} className="text-center text-sm-end " style={{ marginTop: '20px' }}>
                         <div className="social-icon">
                             <a href="https://www.linkedin.com/in/chinmay-awasthi-15ba49262" target="_blank" rel="noreferrer"><img src={navIcon1} alt="icon" /></a>
                             <a href="https://github.com/Achinmay05" target="_blank" rel="noreferrer"><img src={Github} alt="icon" /></a>
                             <a href="https://www.instagram.com/chinmayawasthi05/" target="_blank" rel="noreferrer"><img src={navIcon3} alt="icon" /></a>
                         </div>
-                        <p>CopyRight 2024. All Right Reserved</p>
+                        {/* <p id='footer-paragraph'>CopyRight 2024. All Right Reserved</p> */}
                     </Col>
                 </Row>
             </Container>

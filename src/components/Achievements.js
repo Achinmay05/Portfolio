@@ -25,7 +25,7 @@ export const Achievements = () => {
   return (
     <section className='achievements' id='achievements'>
 
-
+<div className="swiper-container">
       <h2>Achievements</h2>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, EffectCoverflow, A11y]}
@@ -137,6 +137,7 @@ export const Achievements = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+      </div>
 
     </section>
   );
